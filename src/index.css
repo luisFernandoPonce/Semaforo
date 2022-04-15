@@ -28,6 +28,11 @@ body {
   background-color: rgb(136, 136, 136);
 }
 
-btn.btn-warning:hover {
-  background-color: skyblue;
+button {
+  margin: 5px;
+  box-shadow: 2px 2px 0 0 gray;
+}
+button.btn-warning:hover, 
+button.btn-info:hover {
+  background-color: green;
 }
