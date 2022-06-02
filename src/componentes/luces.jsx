@@ -35,7 +35,7 @@ function Luces() {
   return (
     <>
     <div className='semaforo'>
-      <h1>Semaforo Táctil</h1>
+      <h1>Semaforo</h1>
       <div className='luz'>
         <div className='foco' id='red' onClick={()=>setLuz('red')}  style={luz === 'red' ? {backgroundColor:'red', boxShadow: '0px 2px 10px 10px white'} : null } ></div>
       </div>
@@ -49,8 +49,8 @@ function Luces() {
         <div className='foco' id='green' onClick={()=>setLuz('blue')} style={luz === 'blue' ? {backgroundColor:'blue', boxShadow: '0px 2px 10px 10px white'} : null } ></div>
       </div>
     </div>
-    <button className='btn btn-warning' onClick={cambioColor}>Tambien puedes cambiar Color Aquí!</button>
-    <button className='btn btn-info' onClick={agregarLuz} >{luzAdicional ? 'Elimine la' : 'Adicione una'} luz azul Aquí!</button>
+    <button className='btn btn-warning' onClick={cambioColor}>Cambia Color</button>
+    <button className='btn btn-info' onClick={agregarLuz} >{luzAdicional ? 'Elimina la' : 'Agrega una'} luz</button>
     <LucesAutomaticas />
     </>
   );
